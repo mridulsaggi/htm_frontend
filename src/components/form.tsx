@@ -7,7 +7,7 @@ const Form = () => {
     const [query,setquery]=useState("")
     const submithandler=async(e)=>{
         e.preventDefault();
-        const {data}=await axios.post("http://localhost:3000/query",{
+        const {data}=await axios.post("https://hack-the-mountain.onrender.com/query",{
             email,contact,query
         })
         toast.success(data.message)
