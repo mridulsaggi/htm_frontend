@@ -7,9 +7,11 @@ const Form = () => {
     const [query,setquery]=useState("")
     const submithandler=async(e)=>{
         e.preventDefault();
+        console.log("clicked")
         const {data}=await axios.post("https://hack-the-mountain.onrender.com/query",{
             email,contact,query
         })
+        console.log(data)
         toast.success(data.message)
         setemail("")
         setquery("")
@@ -17,7 +19,7 @@ const Form = () => {
     }
 
     return (
-        <div className='form flex w-[100%] justify-around items-center ml-[10rem]'>
+        <div className='form flex w-[100%] justify-around items-center'>
             <p className='text-[4rem] w-[40%]'>Fill the form for any queries and we will contact you soon!!</p>
             <div className="container">
                 <div className="screen">
@@ -34,7 +36,6 @@ const Form = () => {
                             </div>
                             <button className="button login__submit">
                                 <span className="button__text">send your query</span>
-                                <i className="button__icon fas fa-chevron-right"></i>
                             </button>
                         </form>
                     </div>

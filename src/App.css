@@ -12,12 +12,16 @@ html,body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.form{
+	justify-content: space-around;
+	margin-left: 0;
+}
 .container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
+	width: 40%;
 }
 
 .screen {		
@@ -193,7 +197,7 @@ html,body{
   }
   .form{
     text-align: center;
-    margin-left: 0;
+    margin-left: 0rem;
     padding: 3rem;
     flex-direction: column;
     align-items: center;
