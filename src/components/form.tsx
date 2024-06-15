@@ -21,7 +21,7 @@ const Form = () => {
     return (
         <div className='form flex w-[100%] justify-around items-center'>
             <p className='text-[4rem] w-[40%]'>Fill the form for any queries and we will contact you soon!!</p>
-            <div className="container">
+            <div className="container w-[0%]">
                 <div className="screen">
                     <div className="screen__content">
                         <form className="login" onSubmit={submithandler}>
